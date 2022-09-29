@@ -10,7 +10,7 @@ import { addresses, abis } from "@my-app/contracts";
 import GET_TRANSFERS from "./graphql/subgraph";
 
 function WalletButton() {
-  const [rendered, setRendered] = useState("demo");
+  const [rendered, setRendered] = useState("");
 
   const { ens } = useLookupAddress();
 
