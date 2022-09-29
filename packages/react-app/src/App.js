@@ -13,6 +13,8 @@ function WalletButton() {
   const [rendered, setRendered] = useState("");
 
   const { ens } = useLookupAddress();
+
+  // TODO: remove this when https://github.com/facebook/react/issues/12
   const { account, activateBrowserWallet, deactivate, error } = useEthers();
 
   useEffect(() => {
